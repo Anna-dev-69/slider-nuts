@@ -1,0 +1,50 @@
+.ContentSlider {
+  width: 1470px;
+  min-width: 660px;
+  height: 620px;
+  gap: 36px;
+  background-color: rgb(241, 243, 236);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__container-title {
+    width: 660px;
+    height: 75px;
+    font-size: 29px;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    line-height: 75px;
+    letter-spacing: 0;
+    color: #14170e;
+  }
+
+  & button {
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbd1bf99;
+    border: none;
+    cursor: pointer;
+    transition: background-color 300ms;
+    & img {
+      width: 25px;
+      height: 25px;
+      // background-color: #B7BDAB;
+    }
+  }
+
+  & button:hover {
+    background-color: #b7bdab;
+  }
+}
