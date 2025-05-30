@@ -13,7 +13,11 @@ const Slider: React.FC<SliderProps> = (props) => {
   return (
     <div className="Slider">
       <ul className="Slider__ul">
-        {props.data.map((item) => {
+        {props.data.map((item, index) => {
+          let className = "";
+          if (index === 0) {
+            className = "Slider__li";
+          }
           return (
             <li
               key={item.id}
@@ -27,6 +31,7 @@ const Slider: React.FC<SliderProps> = (props) => {
                   ? "transform 0.5s ease-in-out"
                   : "none",
               }}
+              className={className}
             >
               <Card
                 imgSrc={item.imgSrc}

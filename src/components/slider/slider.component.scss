@@ -9,6 +9,8 @@
     transition: transform 0.5s ease-in-out;
     will-change: transform;
 
+    width: 100%;
+
     overflow-x: hidden;
     scrollbar-width: none;
 
@@ -22,4 +24,10 @@
       align-items: center;
     }
   }
+}
+.Slider__li {
+  transform: translateX(-100%);
+  position: absolute;
+  left: -100%;
+  top: 0;
 }
